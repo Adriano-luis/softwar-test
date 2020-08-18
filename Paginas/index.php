@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Teste estágio Softwar</title>
+	<title>Estágio Softwar</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class="titulo"> Página de teste para estágio na Softwar</div>
+	<div class="titulo">Estágio na Softwar</div>
 	<?php
 	$lista = [];
 	require 'config.php';

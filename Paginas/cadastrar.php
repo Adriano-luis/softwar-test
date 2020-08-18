@@ -36,7 +36,7 @@
 
 			<label>
 				UF:<br/>
-				<select name="uf">
+				<select class="default2" name="uf">
 					<option>AC</option>
 					<option>AL</option>
 					<option>AM</option>
@@ -69,12 +69,12 @@
 
 			<label>
 				Observação:<br/>
-				<textarea name="obs"></textarea><br/><br/>
+				<textarea class="default2" name="obs"></textarea><br/><br/>
 			</label>
 
 			<label >
 				Ativo:<br/>
-				<input type="checkbox" name="ativo" value="sim">Sim<br/><br/>
+				<input class="default2" type="checkbox" name="ativo" value="sim">Sim<br/><br/>
 			</label>
 		     
 		    <input class="button" type="submit" value="Cadastrar">

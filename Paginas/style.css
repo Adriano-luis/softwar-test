@@ -8,12 +8,13 @@ body{
 }
 
 .titulo{
-	width: 500px;
+	width: 400px;
 	height: 100px;
 	line-height: 100px;
 	font-family: fantasy;
 	font-size: 25px;
 	margin: auto;
+	text-align: center;
 	color: #ef7e04;
 
 }
@@ -42,14 +43,18 @@ td a{
 	text-decoration: underline;
 	color: #FFF;
 }
+
+
+/* Página de cadastro*/
+
 .cad{
-	margin-left: 400px;
+	margin-left: 700px;
+	background-image:url('http://softwar.com.br/wp-content/themes/softwar-2020/img/vitrine-01.jpg');
 }
 .cad .formulario {
 	width: 500px;
 	padding: 20px;
-	background-color: #134980;
-	color: #ef7e04;
+	background-color: #ef7e04;
 	border-radius: 30px;
 }
 .cad label{
@@ -62,14 +67,23 @@ td a{
 	width: 250px;
 	height: 20px;
 	line-height: 15px;
-	border:2px solid #ef7e04;
+	border:2px solid #134980;
+}
+.cad .default2{
+	border:2px solid #134980;
 }
 .cad .button{
 	width: 250px;
 	height: 40px;
 	line-height: 10px;
 	margin-bottom: 5px;
-	background-color:#ef7e04;
+	background-color:#134980;
 	color: #FFF;
 	border-radius: 30px;
+}
+
+/*Página de login*/
+
+.login {
+	background-color: #134980;
 }
