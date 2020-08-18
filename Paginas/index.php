@@ -47,7 +47,7 @@
 			<td><?= $usuario['uf']; ?></td>
 			<td><?= $usuario['observacao']; ?></td>
 			<td><?= $usuario['ativo']; ?></td>
-			<td><a href="atualizar.php?id=<?= $usuario['id']; ?>">Atualizar</a> - <a href="excluir.php?id=<?= $usuario['id']; ?>">Excluir</a></td>
+			<td><a href="atualizar.php?id=<?= $usuario['id']; ?>">Atualizar</a> - <a href="excluir.php?id=<?= $usuario['id']; ?>" onclick="confirm('Tem certeza que gostaria de excluir?')">Excluir</a></td>
 		</tr>
 		<?php endforeach; ?>
 	</table>
