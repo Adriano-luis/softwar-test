@@ -33,6 +33,7 @@
 			<th>UF</th>
 			<th>Observação</th>
 			<th>Ativo</th>
+			<th>Ação</th>
 		</tr>
 
 		<?php foreach ($lista as $usuario): ?>
@@ -46,6 +47,7 @@
 			<td><?= $usuario['uf']; ?></td>
 			<td><?= $usuario['observacao']; ?></td>
 			<td><?= $usuario['ativo']; ?></td>
+			<td><a href="atualizar.php?id=<?= $usuario['id']; ?>">Atualizar</a> - <a href="excluir.php?id=<?= $usuario['id']; ?>">Excluir</a></td>
 		</tr>
 		<?php endforeach; ?>
 	</table>

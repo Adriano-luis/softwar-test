@@ -6,6 +6,7 @@ body{
 	padding: 0px;
 	color: #FFF;
 }
+
 .titulo{
 	width: 500px;
 	height: 100px;
@@ -34,8 +35,12 @@ th{
 	border-bottom: 4px solid #ef7e04;
 }
 td{
-	background-color: #ef7e04;
+	background-color: #FFF;
 	border: 2px solid #134980;
+	font-size: 100px;
+}
+td a{
+	text-decoration: none;
 }
 .cad{
 	margin-left: 400px;
