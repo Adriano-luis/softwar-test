@@ -1,4 +1,11 @@
 <?php
+session_start();
+if (isset($_SESSION['id']) && !empty($_SESSION['id'])) {
+
+} else {
+	header("location: login.php");
+}
+
 require 'config.php';
 
 //Recebendo e verificando o ID, fazendo a exclusão do cadastro

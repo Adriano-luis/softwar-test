@@ -1,10 +1,18 @@
+<?php
+session_start();
+if (isset($_SESSION['id']) && !empty($_SESSION['id'])) {
+
+} else {
+	header("location: login.php");
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Estágio Softwar</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 </head>
-<body>
+<body class="incial">
 	<div class="titulo">Estágio na Softwar</div>
 	<?php
 	$lista = [];
@@ -20,8 +28,7 @@
 
 	//criação da tablea com html e listagem dos intens encintrados no DB
 	?>
-	 
-	<a href="cadastrar.php"><button>Cadastrar novo usuário</button><a/>
+	<a href="login.php"><button>Sair</button><a/>
 	<table border="0">
 		<tr>
 			<th>Id</th>
@@ -47,7 +54,7 @@
 			<td><?= $usuario['uf']; ?></td>
 			<td><?= $usuario['observacao']; ?></td>
 			<td><?= $usuario['ativo']; ?></td>
-			<td><a href="atualizar.php?id=<?= $usuario['id']; ?>">Atualizar</a> - <a href="excluir.php?id=<?= $usuario['id']; ?>" onclick="confirm('Tem certeza que gostaria de excluir?')">Excluir</a></td>
+			<td><a href="atualizar.php?id=<?= $usuario['id']; ?>">Atualizar</a> - <a href="excluir.php?id=<?= $usuario['id']; ?>" onclick="return confirm('Tem certeza que gostaria de excluir?')">Excluir</a></td>
 		</tr>
 		<?php endforeach; ?>
 	</table>

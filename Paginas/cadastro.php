@@ -31,7 +31,7 @@ if(isset($name,$email,$senha,$cidade) && !empty($name && $email && $senha && $ci
 	$sql->bindParam(':ativo', $ativo);
 	$sql->execute();
 
-	header("location: index.php");
+	header("location: login.php");
 	
  } else {
 	header("location: cadastrar.php");

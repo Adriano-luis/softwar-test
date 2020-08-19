@@ -1,0 +1,143 @@
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+/*Página index*/
+.incial{
+	margin: 20px;
+	padding: 0px;
+	color: #FFF;
+	background-image:url('http://softwar.com.br/wp-content/uploads/2020/06/Fabrica-de-Softwar.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.titulo{
+	width: 400px;
+	height: 100px;
+	line-height: 100px;
+	font-family: fantasy;
+	font-size: 25px;
+	margin: auto;
+	text-align: center;
+	color: #ef7e04;
+
+}
+
+table{
+	width: 100%;
+}
+th{
+	background-color: #134980;
+	border-bottom: 4px solid #ef7e04;
+}
+td{
+	background-color: #ef7e04;
+	border: 2px solid #134980;
+}
+td a{
+	text-decoration: underline;
+	color: #FFF;
+}
+
+
+/* Página de cadastro E página atualizar*/
+
+.cad{
+	height: 100vh;
+	background-image:url('http://softwar.com.br/wp-content/themes/softwar-2020/img/vitrine-01.jpg');
+    background-size:cover;
+    background-position:bottom;
+    overflow: hidden;
+}
+#flex{
+	display: flex;
+	justify-content: space-around;
+}
+.cad img{
+	margin-top: 50px;
+	margin-left: 30px;
+}
+button {
+	width: 225px;
+	height: 30px;
+	line-height: 10px;
+	background-color: #ef7e04;
+	margin-bottom: 5px;
+	color: #FFF;
+}
+.cad .formulario {
+	margin-top: 30px;
+	width: 500px;
+	padding: 20px;
+	background-color: #ef7e04;
+	border-radius: 30px;
+}
+.cad label{
+	width: 500px;
+}
+.cad form{
+	margin-left: 100px;
+}
+.cad .default{
+	width: 250px;
+	height: 20px;
+	line-height: 15px;
+	border:2px solid #134980;
+}
+.cad .default2{
+	border:2px solid #134980;
+}
+.cad .button{
+	width: 250px;
+	height: 40px;
+	line-height: 10px;
+	margin-bottom: 5px;
+	background-color:#134980;
+	color: #FFF;
+	border-radius: 30px;
+}
+
+/*Página de login*/
+
+.login {
+	background-color: #f79413;
+}
+.login img{
+	margin-left:420px;
+	margin-top: 30px; 
+}
+.formulario-log{
+	margin: auto;
+	margin-top: 30px;
+	width: 510px;
+	padding: 20px;
+	background-color: #134980;
+	border-radius: 30px;
+	color: #FFF;
+}
+
+.button-log1,
+.button-log2{
+	width: 225px;
+	height: 30px;
+	line-height: 10px;
+	margin-bottom: 5px;
+	color: #FFF;
+}
+.button-log1{
+		background-color:#ef7e04;
+		font-weight: bold;
+		float: left;
+		margin-right:5px;
+		box-shadow:   #f79413;
+}
+.button-log2{
+		background-color:#FFF;
+		color: #134980;
+		font-weight: bold;
+		box-shadow:   #f79413;
+}
