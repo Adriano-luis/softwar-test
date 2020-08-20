@@ -71,33 +71,34 @@ if($id){
 				<label>
 					UF:<br/>
 					<select name="uf" >
-						<option>AC</option>
-						<option>AL</option>
-						<option>AM</option>
-						<option>AP</option>
-						<option>BA</option>
-						<option>CE</option>
-						<option>DF</option>
-						<option>ES</option>
-						<option>GO</option>
-						<option>MA</option>
-						<option>MG</option>
-						<option>MS</option>
-						<option>MT</option>
-						<option>PA</option>
-						<option>PB</option>
-						<option>PE</option>
-						<option>PI</option>
-						<option>PR</option>
-						<option>RJ</option>
-						<option>RN</option>
-						<option>RO</option>
-						<option>RR</option>
-						<option>RS</option>
-						<option>SC</option>
-						<option>SE</option>
-						<option>SP</option>
-						<option>TO</option>			
+ 
+						<option <?php echo ($info['uf'] == 'AC') ? 'selected': ''; ?>>AC</option>
+						<option <?php echo ($info['uf'] == 'AL') ? 'selected': ''; ?>>AL</option>
+						<option <?php echo ($info['uf'] == 'AM') ? 'selected': ''; ?>>AM</option>
+						<option <?php echo ($info['uf'] == 'AP') ? 'selected': ''; ?>>AP</option>
+						<option <?php echo ($info['uf'] == 'BA') ? 'selected': ''; ?>>BA</option>
+						<option <?php echo ($info['uf'] == 'CE') ? 'selected': ''; ?>>CE</option>
+						<option <?php echo ($info['uf'] == 'DF') ? 'selected': ''; ?>>DF</option>
+						<option <?php echo ($info['uf'] == 'ES') ? 'selected': ''; ?>>ES</option>
+						<option <?php echo ($info['uf'] == 'GO') ? 'selected': ''; ?>>GO</option>
+						<option <?php echo ($info['uf'] == 'MA') ? 'selected': ''; ?>>MA</option>
+						<option <?php echo ($info['uf'] == 'MG') ? 'selected': ''; ?>>MG</option>
+						<option <?php echo ($info['uf'] == 'MS') ? 'selected': ''; ?>>MS</option>
+						<option <?php echo ($info['uf'] == 'MT') ? 'selected': ''; ?>>MT</option>
+						<option <?php echo ($info['uf'] == 'PA') ? 'selected': ''; ?>>PA</option>
+						<option <?php echo ($info['uf'] == 'PB') ? 'selected': ''; ?>>PB</option>
+						<option <?php echo ($info['uf'] == 'PE') ? 'selected': ''; ?>>PE</option>
+						<option <?php echo ($info['uf'] == 'PI') ? 'selected': ''; ?>>PI</option>
+						<option <?php echo ($info['uf'] == 'PR') ? 'selected': ''; ?>>PR</option>
+						<option<?php echo ($info['uf'] == 'RJ') ? 'selected': ''; ?>>RJ</option>
+						<option<?php echo ($info['uf'] == 'RN') ? 'selected': ''; ?>>RN</option>
+						<option<?php echo ($info['uf'] == 'RO') ? 'selected': ''; ?>>RO</option>
+						<option<?php echo ($info['uf'] == 'RR') ? 'selected': ''; ?>>RR</option>
+						<option<?php echo ($info['uf'] == 'RS') ? 'selected': ''; ?>>RS</option>
+						<option<?php echo ($info['uf'] == 'SC') ? 'selected': ''; ?>>SC</option>
+						<option<?php echo ($info['uf'] == 'SE') ? 'selected': ''; ?>>SE</option>
+						<option<?php echo ($info['uf'] == 'SP') ? 'selected': ''; ?>>SP</option>
+						<option<?php echo ($info['uf'] == 'TO') ? 'selected': ''; ?>>TO</option>			
 					</select><br/><br/>
 				</label>
 
@@ -108,7 +109,7 @@ if($id){
 
 				<label >
 					Ativo:<br/>
-					<input type="checkbox" name="ativo" value="sim">Sim<br/><br/>
+					<input type="checkbox" name="ativo" value="sim" <?php echo ($info['ativo'] == 'sim') ? 'checked' : '';?> >Sim<br/><br/>
 				</label>
 			     
 			    <input class="button" type="submit" value="Atualizar">

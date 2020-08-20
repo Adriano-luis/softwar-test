@@ -28,7 +28,7 @@ if (isset($_SESSION['id']) && !empty($_SESSION['id'])) {
 
 	//criação da tablea com html e listagem dos intens encintrados no DB
 	?>
-	<a href="login.php"><button>Sair</button><a/>
+	<a href="sair.php"><button>Sair</button><a/>
 	<table border="0">
 		<tr>
 			<th>Id</th>

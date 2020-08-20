@@ -5,7 +5,7 @@ require 'config.php';
 //Filtrar eles para diminuir vulnerabilidades em ataques
 
 $id = filter_input(INPUT_POST, 'id');
-$name = filter_input(INPUT_POST, 'nome');
+$name = ucfirst(filter_input(INPUT_POST, 'nome'));
 $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
 $senha = md5(filter_input(INPUT_POST, 'senha'));
 $dataNascimento = filter_input(INPUT_POST, 'data',);

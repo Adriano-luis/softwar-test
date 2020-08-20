@@ -80,6 +80,7 @@ button {
 	width: 500px;
 }
 .cad form{
+	font-size: 16px;
 	margin-left: 100px;
 }
 .cad .default{
@@ -89,6 +90,7 @@ button {
 	border:2px solid #134980;
 }
 .cad .default2{
+	max-height: 100px;
 	border:2px solid #134980;
 }
 .cad .button{
@@ -119,25 +121,53 @@ button {
 	border-radius: 30px;
 	color: #FFF;
 }
+.login label, .login input{
+	margin-left: 20px;
+}
+
+.login input{
+	width: 400px;
+	height: 30px;
+	line-height: 30px;
+	padding: 4px;
+	font-size: 18px;
+	border:1px solid #ef7e04;
+}
 
 .button-log1,
 .button-log2{
-	width: 225px;
+	width: 190px;
 	height: 30px;
 	line-height: 10px;
+	margin-left: 20px;
 	margin-bottom: 5px;
 	color: #FFF;
+	border:none;
+	border-radius: 3px;
+	border: 1px solid #4C4B4B;
+	transition: all 0s ease-in;
 }
 .button-log1{
-		background-color:#ef7e04;
-		font-weight: bold;
-		float: left;
-		margin-right:5px;
-		box-shadow:   #f79413;
+	background-color:#ef7e04;
+	font-weight: bold;
+	float: left;
+	margin-right:5px;
+	margin-bottom: 5px;
+	box-shadow:1px 8px 2px  #f79413;
+}
+.button-log1:hover{
+	margin-top: 5px;
+	box-shadow: 1px 3px 2px #f79413;
 }
 .button-log2{
-		background-color:#FFF;
-		color: #134980;
-		font-weight: bold;
-		box-shadow:   #f79413;
+	background-color:#FFF;
+	color: #134980;
+	font-weight: bold;
+	margin-bottom: 10px;
+	box-shadow:1px 8px 2px  #CCC;
+}
+.button-log2:hover{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	box-shadow: 1px 3px 2px #CCC;
 }

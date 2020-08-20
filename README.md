@@ -7,9 +7,8 @@ BD
 acesso: root, " ".
 
 A fazer:
--Configurar campos "cidade","UF" e "Ativo" para pegar e exibir os dados do Db de um usuário ja cadastrado
--Configurar campos "cidade" e "UF" com javascript.
--Terminar de estilizar página de login.
--Quando clicar em sair ele apagar os dados da sessão.
--Botões da tela de login animados como no site. 
--Em cadastrar e atualizar, fazer com que a primeira letra do nome fique maiuscula.
+-Configurar campos "cidade" e "UF" com javascript. estou estudando java script
+- botão sair tive que criar uma página para zerar o id e fazer o redirecionamento(existe jeito mais
+fácil de fazer?)
+- comentar o código.
+
