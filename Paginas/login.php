@@ -2,9 +2,11 @@
 session_start();
 require 'config.php';
 
+//pegando os dados de acesso do usuário
 $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
 $senha = md5(filter_input(INPUT_POST, 'senha'));
 
+//Verificando se existe esse cadastro no DB, se existir ele loga, caso não, ele aparece uma msg de erro
 if(isset($email, $senha) && !empty($email && $senha)) {
 	$sql = $pdo->prepare("SELECT * FROM usuario WHERE email=:email AND senha=:senha");
 	$sql->bindParam(':email',$email );

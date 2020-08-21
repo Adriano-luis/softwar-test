@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +12,7 @@
 		<div><img src="../assets/images/softwar-logo.png"></div>
 		<div class="formulario">
 			<h2>Cadastrar novo usuário:</h2>
-
+			<?php if($_SESSION['cadastro']){ echo $_SESSION['cadastro'];}else {$_SESSION['cadastro'] = "";} ?>
 			<form method="POST" action="cadastro.php">
 				<label>
 					Nome:<br/>

@@ -1,11 +1,9 @@
 <?php
 session_start();
-if (isset($_SESSION['id']) && !empty($_SESSION['id'])) {
 
-} else {
-	header("location: login.php");
-}
-?>
+//verificando se o ID existe, se sim executa o html, caso não, retona a o login
+if (isset($_SESSION['id']) && !empty($_SESSION['id'])){ ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -60,3 +58,7 @@ if (isset($_SESSION['id']) && !empty($_SESSION['id'])) {
 	</table>
 </body>
 </html>
+<?php } else {
+	header("location: login.php");
+}
+?>

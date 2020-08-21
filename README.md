@@ -7,8 +7,5 @@ BD
 acesso: root, " ".
 
 A fazer:
--Configurar campos "cidade" e "UF" com javascript. estou estudando java script
-- botão sair tive que criar uma página para zerar o id e fazer o redirecionamento(existe jeito mais
-fácil de fazer?)
-- comentar o código.
-
+-Configurar campos "cidade" e "UF" com javascript. estou estudando java script.
+- fazer mensagem de usuario ja cadastrado aparecer.

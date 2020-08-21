@@ -1,11 +1,8 @@
 <?php
 session_start();
+//varifca se existe o ID e atualiza o cadastro desse ID, caso não, retorna para o login
 if (isset($_SESSION['id']) && !empty($_SESSION['id'])) {
-
-} else {
-	header("location: login.php");
-}
-require 'config.php';
+	require 'config.php';
 
 //recebendo e verificando a existencia de ID, pegando dados do ID no DB
 $info=[];
@@ -26,8 +23,10 @@ if($id){
 	header("location: index.php");
 	exit;
 }
+} else {
+	header("location: login.php");
+}
 
-// Fromeulário com as informações do cadastro no DB.
 ?>
 <!DOCTYPE html>
 <html>
