@@ -26,8 +26,6 @@ if(isset($name,$email,$senha,$cidade) && !empty($name && $email && $senha && $ci
 	$sql->execute();
 
 	if ($sql->rowCount()> 0) {
-		$user = $sql->fetch(PDO::FETCH_ASSOC);
-
 		$_SESSION['cadastro'] = "Usuário já cadastrado";
 
 		header("location: cadastrar.php");

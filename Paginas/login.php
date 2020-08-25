@@ -32,10 +32,10 @@ if(isset($email, $senha) && !empty($email && $senha)) {
 <body class="login">
 	<div class="logo"><img src="../assets/images/softwar-logo.png"></div>
 	<div class="formulario-log">
-		<?php if ($_SESSION['msg']) {
+		<?php if (isset($_SESSION['msg'])) {
 			echo $_SESSION['msg'];
 			$_SESSION['msg'] = '';
-		} ?>
+		} else {$_SESSION['msg'] = '';} ?>
 		<h2>Login:</h2><br/>
 
 		<form method="POST">

@@ -12,7 +12,7 @@ session_start();
 		<div><img src="../assets/images/softwar-logo.png"></div>
 		<div class="formulario">
 			<h2>Cadastrar novo usuário:</h2>
-			<?php if($_SESSION['cadastro']){ echo $_SESSION['cadastro'];}else {$_SESSION['cadastro'] = "";} ?>
+			<?php if(isset($_SESSION['cadastro'])){ echo $_SESSION['cadastro'];} else {$_SESSION['cadastro'] = "";} ?>
 			<form method="POST" action="cadastro.php">
 				<label>
 					Nome:<br/>
@@ -35,13 +35,41 @@ session_start();
 				</label>
 
 				<label>
-					Cidade:<br/>
-					<input class="default" type="text" name="cid"><br/><br/>
-				</label>
-
-				<label>
 					UF:<br/>
-					<select class="default2" name="uf">
+					<select class="default" name="uf" onchange="city(this)">
+						<option>AC</option>
+						<option>AL</option>
+						<option>AM</option>
+						<option>AP</option>
+						<option>BA</option>
+						<option>CE</option>
+						<option>DF</option>
+						<option>ES</option>
+						<option>GO</option>
+						<option>MA</option>
+						<option>MG</option>
+						<option>MS</option>
+						<option>MT</option>
+						<option>PA</option>
+						<option>PB</option>
+						<option>PE</option>
+						<option>PI</option>
+						<option>PR</option>
+						<option>RJ</option>
+						<option>RN</option>
+						<option>RO</option>
+						<option>RR</option>
+						<option>RS</option>
+						<option>SC</option>
+						<option>SE</option>
+						<option>SP</option>
+						<option>TO</option>			
+					</select><br/><br/>
+				</label>
+				
+				<label>
+					Cidade:<br/>
+					<select id="pop" class="default" type="text" name="cid"><br/><br/>
 						<option>AC</option>
 						<option>AL</option>
 						<option>AM</option>
@@ -87,5 +115,7 @@ session_start();
 			</form>
 		</div>
 	</div>
+	<script type="text/javascript" src="../assets/js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="../assets/js/script.js"></script>
 </body>
 </html>

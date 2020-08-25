@@ -7,5 +7,4 @@ BD
 acesso: root, " ".
 
 A fazer:
--Configurar campos "cidade" e "UF" com javascript. estou estudando java script.
-- fazer mensagem de usuario ja cadastrado aparecer.
+-Configurar campos "cidade" e "UF" com javascript. Ambiente praparado falta apenas a requisição ajax futuras adequações.
