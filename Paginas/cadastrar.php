@@ -36,7 +36,7 @@ session_start();
 
 				<label>
 					UF:<br/>
-					<select class="default" name="uf" onchange="city(this)">
+					<select id="changeuf" class="default" name="uf">
 						<option>AC</option>
 						<option>AL</option>
 						<option>AM</option>
