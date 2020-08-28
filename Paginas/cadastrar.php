@@ -69,34 +69,8 @@ session_start();
 				
 				<label>
 					Cidade:<br/>
-					<select id="pop" class="default" type="text" name="cid"><br/><br/>
-						<option>AC</option>
-						<option>AL</option>
-						<option>AM</option>
-						<option>AP</option>
-						<option>BA</option>
-						<option>CE</option>
-						<option>DF</option>
-						<option>ES</option>
-						<option>GO</option>
-						<option>MA</option>
-						<option>MG</option>
-						<option>MS</option>
-						<option>MT</option>
-						<option>PA</option>
-						<option>PB</option>
-						<option>PE</option>
-						<option>PI</option>
-						<option>PR</option>
-						<option>RJ</option>
-						<option>RN</option>
-						<option>RO</option>
-						<option>RR</option>
-						<option>RS</option>
-						<option>SC</option>
-						<option>SE</option>
-						<option>SP</option>
-						<option>TO</option>			
+					<select id="pop" class="default" type="text" name="cid" placeholder="Selecione o Estado primeiro..."><br/><br/>
+								
 					</select><br/><br/>
 				</label>
 
