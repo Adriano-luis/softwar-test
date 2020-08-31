@@ -7,4 +7,4 @@ BD
 acesso: root, " ".
 
 A fazer:
-em ajax.php estou com dificuldade de salvar o os dados recebidos do DB dentro da tag <option>...</option> pra ai sim devolver para o jquery e popular o select de cidades no html.Se puder me dizer um método eu agradeço, mas sigo procurando.
+estudei todas as 30 aulas de bootstrap 3 e amanhã vou estudar todas do bootstrap 4 e começar as devidas mudanças no projeto.

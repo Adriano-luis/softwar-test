@@ -12,11 +12,13 @@ $(function(){
 				$('#pop').html('<option>Carregando cidades...</option>');
 			},
 			success:function(json){
+				console.log(json);
+				console.log(json.cidades);
 				$('#pop').html('<option>Selecione a sua cidade...</option>');
 
 				if (json) {
-					$.each(json.nome, function(key,value){
-						$('#pop').html('<option>'+value['nome']+'</option>');
+					$.each(json, function(key,value){
+						$('#pop').append('<option>'+value['nome']+'</option>');
 					})
 				}
 

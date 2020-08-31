@@ -63,13 +63,8 @@ if($id){
 				</label>
 
 				<label>
-					Cidade:<br/>
-					<input class="default" type="text" name="cid" value="<?= $info['cidade'] ?>"><br/><br/>
-				</label>
-
-				<label>
 					UF:<br/>
-					<select name="uf" >
+					<select id="changeuf" class="default" name="uf">
  
 						<option <?php echo ($info['uf'] == 'AC') ? 'selected': ''; ?>>AC</option>
 						<option <?php echo ($info['uf'] == 'AL') ? 'selected': ''; ?>>AL</option>
@@ -100,6 +95,12 @@ if($id){
 						<option<?php echo ($info['uf'] == 'TO') ? 'selected': ''; ?>>TO</option>			
 					</select><br/><br/>
 				</label>
+				<label>
+					Cidade:<br/>
+					<select id="pop" class="default" type="text" name="cid">
+						<option><?= $info['cidade'] ?></option>
+					</select><br/><br/>
+				</label>
 
 				<label>
 					Observação:<br/>
@@ -115,5 +116,7 @@ if($id){
 			</form>
 		</div>
 	</div>
+	<script type="text/javascript" src="../assets/js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="../assets/js/script.js"></script>
 </body>
 </html>
