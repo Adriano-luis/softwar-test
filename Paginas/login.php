@@ -26,35 +26,52 @@ if(isset($email, $senha) && !empty($email && $senha)) {
 <!DOCTYPE html>
 <html>
 <head>
-	<title>	Cadastrar</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+	<title>Login Softwar</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 </head>
 <body class="login">
-	<div class="logo"><img src="../assets/images/softwar-logo.png"></div>
-	<div class="formulario-log">
-		<?php if (isset($_SESSION['msg'])) {
-			echo $_SESSION['msg'];
-			$_SESSION['msg'] = '';
-		} else {$_SESSION['msg'] = '';} ?>
-		<h2>Login:</h2><br/>
-
-		<form method="POST">
-
-			<label>
-				Email:<br/>
-				<input class="default" type="email" name="email"><br/><br/>
-			</label>
-
-			<label>
-				Senha:<br/>
-				<input class="default" type="password" name="senha"><br/><br/><br/>
-			</label>
-		     
-		    <button  class="button-log1" type="submit" >Entrar</button>
-
-		</form>
-
-		<a href="cadastrar.php"><button class="button-log2">Cadastrar novo usuário</button><a/>
+	<div class="container">
+		<img class=" mx-auto d-block img-fluid" src="../assets/images/softwar-logo.png">
+		<div class="formulario-log justify-content-center">
+			<?php if (isset($_SESSION['msg'])) {
+				echo $_SESSION['msg'];
+				$_SESSION['msg'] = '';
+				} else {$_SESSION['msg'] = '';}
+			?>
+			<form method="POST" class="mx-auto d-block">
+				<div class="form-row">
+					<div class="col">
+						<div class="form-group">
+							<label for="email">Email:</label>
+							<input id="email" class="form-control" type="email" name="email">
+						</div>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="col">
+						<div class="form-group">
+							<label for="senha">Senha:</label>
+							<input id="senha" class="form-control" type="password" name="senha">
+						</div>
+					</div>
+				</div>
+			    <div class="form-row">
+					<div class="col">
+						<div class="form-group">
+							<button  class="button-log1" type="submit" >Entrar</button>
+						</div>
+					</div>
+				</div>
+			</form>
+			<a href="cadastrar.php"><button class="button-log2">Cadastrar novo usuário</button><a/>
+		</div>
 	</div>
+	
+<script type="text/javascript" src="../assets/js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/script.js"></script>
+<script type="text/javascript" src="../assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

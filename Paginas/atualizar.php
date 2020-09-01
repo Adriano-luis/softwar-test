@@ -31,7 +31,10 @@ if($id){
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
 	<title>	Atualizar</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 </head>
 <body class="cad">
@@ -118,5 +121,5 @@ if($id){
 	</div>
 	<script type="text/javascript" src="../assets/js/jquery-3.5.1.min.js"></script>
 	<script type="text/javascript" src="../assets/js/script.js"></script>
-</body>
+	<script type="text/javascript" src="../assets/js/bootstrap.bundle.min.js"></script>
 </html>

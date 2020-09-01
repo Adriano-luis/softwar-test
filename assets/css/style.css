@@ -109,7 +109,6 @@ button {
 	background-color: #f79413;
 }
 .login img{
-	margin-left:420px;
 	margin-top: 30px; 
 }
 .formulario-log{
@@ -121,13 +120,10 @@ button {
 	border-radius: 30px;
 	color: #FFF;
 }
-.login label, .login input{
-	margin-left: 20px;
-}
 
 .login input{
-	width: 400px;
-	height: 30px;
+	margin: auto;
+	margin-bottom: 5px;
 	line-height: 30px;
 	padding: 4px;
 	font-size: 18px;
