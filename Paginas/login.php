@@ -66,7 +66,11 @@ if(isset($email, $senha) && !empty($email && $senha)) {
 					</div>
 				</div>
 			</form>
-			<a href="cadastrar.php"><button class="button-log2">Cadastrar novo usuário</button><a/>
+			<div class="row">
+				<div class="col">
+					<a href="cadastrar.php"><button class="button-log2">Cadastrar novo usuário</button><a/>
+				</div>
+			</div>
 		</div>
 	</div>
 	
