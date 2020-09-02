@@ -16,6 +16,16 @@
 CREATE DATABASE IF NOT EXISTS `softwar` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
 USE `softwar`;
 
+-- Copiando estrutura para tabela softwar.cidades
+CREATE TABLE IF NOT EXISTS `cidades` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` char(50) NOT NULL DEFAULT '0',
+  `uf` char(50) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=74 DEFAULT CHARSET=utf8mb4;
+
+-- Exportação de dados foi desmarcado.
+
 -- Copiando estrutura para tabela softwar.usuario
 CREATE TABLE IF NOT EXISTS `usuario` (
   `data` date NOT NULL,
@@ -28,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   `observacao` tinytext NOT NULL DEFAULT '0',
   `ativo` varchar(3) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=utf8mb4;
 
 -- Exportação de dados foi desmarcado.
 
