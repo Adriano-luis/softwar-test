@@ -30,7 +30,7 @@ session_start();
 					<div class="col-10">
 						<div class="form-group">
 							<label>Email:</label>
-							<input class="default form-control" type="email" name="email">
+							<input class="default form-control form-control-sm" type="email" name="email">
 						</div>
 					</div>
 				</div>
@@ -39,7 +39,7 @@ session_start();
 					<div class="col-10">
 						<div class="form-group">
 							<label>Senha:</label>
-							<input class="default form-control" type="password" name="senha">
+							<input class="default form-control form-control-sm" type="password" name="senha">
 						</div>
 					</div>
 				</div>
@@ -48,16 +48,16 @@ session_start();
 					<div class="col-10">
 						<div class="form-group">
 							<label>Data de nascimento:</label>
-							<input class="default form-control" type="date" name="data">
+							<input class="default form-control form-control-sm" type="date" name="data">
 						</div>
 					</div>
 				</div>
 
 				<div class="form-row">
-					<div class="col-2">
+					<div class="col-3">
 						<div class="form-group">
 							<label>UF:</label>
-							<select id="changeuf" class="default uf form-control" name="uf">
+							<select id="changeuf" class="default uf select form-control form-control-sm" name="uf">
 								<option>AC</option>
 								<option>AL</option>
 								<option>AM</option>
@@ -88,10 +88,10 @@ session_start();
 							</select>
 						</div>
 					</div>
-					<div class="col-8">
+					<div class="col-7">
 						<div class="form-group">
 							<label>Cidade:</label>
-							<select id="pop" class="default form-control" type="text" name="cid" placeholder="Selecione o Estado primeiro...">
+							<select id="pop" class="default form-control select form-control-sm" type="text" name="cid" placeholder="Selecione o Estado primeiro...">
 							</select>
 						</div>
 					</div>
@@ -101,19 +101,19 @@ session_start();
 					<div class="col-10">
 						<div class="form-group">
 							<label>Observação:</label>
-							<textarea class="default2 obs form-control" name="obs"></textarea>
+							<textarea class="default2 obs form-control form-control-sm" name="obs"></textarea>
 						</div>
 					</div>
 				</div>
 
 				<div class="form-row">
-					<div class="col-1">
+					<div class="col-2">
 						<div class="form-group">
 							<label>Ativo:</label>
 							<input class="default2 checkbox form-control" type="checkbox" name="ativo" value="sim">
 						</div>
 					</div>
-					<div class="col">
+					<div class="col-4">
 						<div class="sim form-group">Sim</div>
 					</div>
 				</div>
