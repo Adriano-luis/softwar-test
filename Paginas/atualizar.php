@@ -38,84 +38,124 @@ if($id){
 	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 </head>
 <body class="cad">
-	<div id="flex">
-		<div><img src="../assets/images/softwar-logo.png"></div>
-		<div class="formulario">
+	<div class="container">
+		<img  class="img-fluid float-left" src="../assets/images/softwar-logo.png">
+		<div class="formulario float-right">
 			<h2>Atualizar usuário:</h2>
 
-			<form method="POST" action="atualizar-act.php">
+			<form  class="mx-auto d-block" method="POST" action="atualizar-act.php">
 				<input type="hidden" name="id" value="<?= $info['id'] ?>">
-				<label>
-					Nome:<br/>
-					<input class="default" type="text" name="nome" value="<?= $info['nome'] ?>"><br/><br/>
-				</label>
+				
+				<div class="form-row">
+					<div class="col">
+						<div class="form-group">
+							<label>Nome:</label>
+							<input class="form-control form-control-sm" type="text" name="nome" value="<?= $info['nome'] ?>">
+						</div>
+					</div>
+				</div>
 
-				<label >
-					Email:<br/>
-					<input class="default" type="email" name="email" value="<?= $info['email'] ?>"><br/><br/>
-				</label>
+				<div class="form-row">
+					<div class="col">
+						<div class="form-group">
+							<label>Email:</label>
+							<input class="form-control form-control-sm" type="email" name="email" value="<?= $info['email'] ?>">
+						</div>
+					</div>
+				</div>
 
-				<label>
-					Senha:<br/>
-					<input class="default" type="password" name="senha" value="<?= $info['senha'] ?>"><br/><br/>
-				</label>
+				<div class="form-row">
+					<div class="col">
+						<div class="form-group">
+							<label>Senha:</label>
+							<input class="form-control form-control-sm" type="password" name="senha" value="<?= $info['senha'] ?>">
 
-				<label>
-					Data de nascimento:<br/>
-					<input class="default" type="date" name="data" value="<?= $info['data'] ?>"><br/><br/>
-				</label>
+						</div>
+					</div>
+				</div>
 
-				<label>
-					UF:<br/>
-					<select id="changeuf" class="default" name="uf">
- 
-						<option <?php echo ($info['uf'] == 'AC') ? 'selected': ''; ?>>AC</option>
-						<option <?php echo ($info['uf'] == 'AL') ? 'selected': ''; ?>>AL</option>
-						<option <?php echo ($info['uf'] == 'AM') ? 'selected': ''; ?>>AM</option>
-						<option <?php echo ($info['uf'] == 'AP') ? 'selected': ''; ?>>AP</option>
-						<option <?php echo ($info['uf'] == 'BA') ? 'selected': ''; ?>>BA</option>
-						<option <?php echo ($info['uf'] == 'CE') ? 'selected': ''; ?>>CE</option>
-						<option <?php echo ($info['uf'] == 'DF') ? 'selected': ''; ?>>DF</option>
-						<option <?php echo ($info['uf'] == 'ES') ? 'selected': ''; ?>>ES</option>
-						<option <?php echo ($info['uf'] == 'GO') ? 'selected': ''; ?>>GO</option>
-						<option <?php echo ($info['uf'] == 'MA') ? 'selected': ''; ?>>MA</option>
-						<option <?php echo ($info['uf'] == 'MG') ? 'selected': ''; ?>>MG</option>
-						<option <?php echo ($info['uf'] == 'MS') ? 'selected': ''; ?>>MS</option>
-						<option <?php echo ($info['uf'] == 'MT') ? 'selected': ''; ?>>MT</option>
-						<option <?php echo ($info['uf'] == 'PA') ? 'selected': ''; ?>>PA</option>
-						<option <?php echo ($info['uf'] == 'PB') ? 'selected': ''; ?>>PB</option>
-						<option <?php echo ($info['uf'] == 'PE') ? 'selected': ''; ?>>PE</option>
-						<option <?php echo ($info['uf'] == 'PI') ? 'selected': ''; ?>>PI</option>
-						<option <?php echo ($info['uf'] == 'PR') ? 'selected': ''; ?>>PR</option>
-						<option<?php echo ($info['uf'] == 'RJ') ? 'selected': ''; ?>>RJ</option>
-						<option<?php echo ($info['uf'] == 'RN') ? 'selected': ''; ?>>RN</option>
-						<option<?php echo ($info['uf'] == 'RO') ? 'selected': ''; ?>>RO</option>
-						<option<?php echo ($info['uf'] == 'RR') ? 'selected': ''; ?>>RR</option>
-						<option<?php echo ($info['uf'] == 'RS') ? 'selected': ''; ?>>RS</option>
-						<option<?php echo ($info['uf'] == 'SC') ? 'selected': ''; ?>>SC</option>
-						<option<?php echo ($info['uf'] == 'SE') ? 'selected': ''; ?>>SE</option>
-						<option<?php echo ($info['uf'] == 'SP') ? 'selected': ''; ?>>SP</option>
-						<option<?php echo ($info['uf'] == 'TO') ? 'selected': ''; ?>>TO</option>			
-					</select><br/><br/>
-				</label>
-				<label>
-					Cidade:<br/>
-					<select id="pop" class="default" type="text" name="cid">
-						<option><?= $info['cidade'] ?></option>
-					</select><br/><br/>
-				</label>
+				<div class="form-row">
+					<div class="col">
+						<div class="form-group">
+							<label>Data de nascimento:</label>
+							<input class="form-control form-control-sm" type="date" name="data" value="<?= $info['data'] ?>">
+						</div>
+					</div>
+				</div>
 
-				<label>
-					Observação:<br/>
-					<textarea name="obs" ><?= $info['observacao'] ?></textarea><br/><br/>
-				</label>
+				<div class="form-row">
+					<div class="col-3">
+						<div class="form-group">
+							<label>UF:</label>
+							<select id="changeuf" class="select form-control form-control-sm" name="uf">
 
-				<label >
-					Ativo:<br/>
-					<input type="checkbox" name="ativo" value="sim" <?php echo ($info['ativo'] == 'sim') ? 'checked' : '';?> >Sim<br/><br/>
-				</label>
+								<option <?php echo ($info['uf'] == 'AC') ? 'selected': ''; ?>>AC</option>
+								<option <?php echo ($info['uf'] == 'AL') ? 'selected': ''; ?>>AL</option>
+								<option <?php echo ($info['uf'] == 'AM') ? 'selected': ''; ?>>AM</option>
+								<option <?php echo ($info['uf'] == 'AP') ? 'selected': ''; ?>>AP</option>
+								<option <?php echo ($info['uf'] == 'BA') ? 'selected': ''; ?>>BA</option>
+								<option <?php echo ($info['uf'] == 'CE') ? 'selected': ''; ?>>CE</option>
+								<option <?php echo ($info['uf'] == 'DF') ? 'selected': ''; ?>>DF</option>
+								<option <?php echo ($info['uf'] == 'ES') ? 'selected': ''; ?>>ES</option>
+								<option <?php echo ($info['uf'] == 'GO') ? 'selected': ''; ?>>GO</option>
+								<option <?php echo ($info['uf'] == 'MA') ? 'selected': ''; ?>>MA</option>
+								<option <?php echo ($info['uf'] == 'MG') ? 'selected': ''; ?>>MG</option>
+								<option <?php echo ($info['uf'] == 'MS') ? 'selected': ''; ?>>MS</option>
+								<option <?php echo ($info['uf'] == 'MT') ? 'selected': ''; ?>>MT</option>
+								<option <?php echo ($info['uf'] == 'PA') ? 'selected': ''; ?>>PA</option>
+								<option <?php echo ($info['uf'] == 'PB') ? 'selected': ''; ?>>PB</option>
+								<option <?php echo ($info['uf'] == 'PE') ? 'selected': ''; ?>>PE</option>
+								<option <?php echo ($info['uf'] == 'PI') ? 'selected': ''; ?>>PI</option>
+								<option <?php echo ($info['uf'] == 'PR') ? 'selected': ''; ?>>PR</option>
+								<option<?php echo ($info['uf'] == 'RJ') ? 'selected': ''; ?>>RJ</option>
+								<option<?php echo ($info['uf'] == 'RN') ? 'selected': ''; ?>>RN</option>
+								<option<?php echo ($info['uf'] == 'RO') ? 'selected': ''; ?>>RO</option>
+								<option<?php echo ($info['uf'] == 'RR') ? 'selected': ''; ?>>RR</option>
+								<option<?php echo ($info['uf'] == 'RS') ? 'selected': ''; ?>>RS</option>
+								<option<?php echo ($info['uf'] == 'SC') ? 'selected': ''; ?>>SC</option>
+								<option<?php echo ($info['uf'] == 'SE') ? 'selected': ''; ?>>SE</option>
+								<option<?php echo ($info['uf'] == 'SP') ? 'selected': ''; ?>>SP</option>
+								<option<?php echo ($info['uf'] == 'TO') ? 'selected': ''; ?>>TO</option>			
+							</select>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="form-group">
+							<label>Cidade:</label>
+							<select id="pop" class="select form-control form-control-sm" type="text" name="cid">
+								<option><?= $info['cidade'] ?></option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div class="col">
+						<div class="form-group">
+							<label>Observação:</label>
+							<textarea class="form-control form-control-sm" name="obs" ><?= $info['observacao'] ?></textarea>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div class="col-1">
+						<div class="form-group">
+							<label>Ativo:</label>
+							<input class=" checkbox form-control form-control-sm" type="checkbox" name="ativo" value="sim" <?php echo ($info['ativo'] == 'sim') ? 'checked' : '';?>>
+						</div>
+					</div>
+
+					<div class="col-1">
+						<div class="form-group">
+							<label></label>
+							<div>Sim</div>
+						</div>
+					</div>
+				</div>
 			     
-			    <input class="button" type="submit" value="Atualizar">
+			    <input class="btn btn-primary mx-auto d-block btn-block" style="margin-left: ;" type="submit" value="Atualizar">
 			</form>
 		</div>
 	</div>

@@ -7,5 +7,4 @@ BD
 acesso: root, " ".
 
 A fazer:
-consertar botão na página de login, estou tendo muitas dificuldades com o bootstrap.
--continuar a mudança
+finalizei a transição para bootstrap padrão, coloquei as datas apresentas para o formato br recebi o contrato da faculdade assinado, gostaria de amanhã ir imprimir assinar e enviar ao CIEE.
