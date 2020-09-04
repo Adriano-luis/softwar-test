@@ -68,23 +68,21 @@ if($id){
 					<div class="col">
 						<div class="form-group">
 							<label>Senha:</label>
-							<input class="form-control form-control-sm" type="password" name="senha" value="<?= $info['senha'] ?>">
+							<input class="form-control form-control-sm" type="password" name="senha" placeholder="Senha">
 
 						</div>
 					</div>
 				</div>
 
 				<div class="form-row">
-					<div class="col">
+					<div class="col-5">
 						<div class="form-group">
 							<label>Data de nascimento:</label>
 							<input class="form-control form-control-sm" type="date" name="data" value="<?= $info['data'] ?>">
 						</div>
 					</div>
-				</div>
 
-				<div class="form-row">
-					<div class="col-3">
+					<div class="col">
 						<div class="form-group">
 							<label>UF:</label>
 							<select id="changeuf" class="select form-control form-control-sm" name="uf">
@@ -93,34 +91,14 @@ if($id){
 								<option <?php echo ($info['uf'] == 'AL') ? 'selected': ''; ?>>AL</option>
 								<option <?php echo ($info['uf'] == 'AM') ? 'selected': ''; ?>>AM</option>
 								<option <?php echo ($info['uf'] == 'AP') ? 'selected': ''; ?>>AP</option>
-								<option <?php echo ($info['uf'] == 'BA') ? 'selected': ''; ?>>BA</option>
-								<option <?php echo ($info['uf'] == 'CE') ? 'selected': ''; ?>>CE</option>
-								<option <?php echo ($info['uf'] == 'DF') ? 'selected': ''; ?>>DF</option>
-								<option <?php echo ($info['uf'] == 'ES') ? 'selected': ''; ?>>ES</option>
-								<option <?php echo ($info['uf'] == 'GO') ? 'selected': ''; ?>>GO</option>
-								<option <?php echo ($info['uf'] == 'MA') ? 'selected': ''; ?>>MA</option>
-								<option <?php echo ($info['uf'] == 'MG') ? 'selected': ''; ?>>MG</option>
-								<option <?php echo ($info['uf'] == 'MS') ? 'selected': ''; ?>>MS</option>
-								<option <?php echo ($info['uf'] == 'MT') ? 'selected': ''; ?>>MT</option>
-								<option <?php echo ($info['uf'] == 'PA') ? 'selected': ''; ?>>PA</option>
-								<option <?php echo ($info['uf'] == 'PB') ? 'selected': ''; ?>>PB</option>
-								<option <?php echo ($info['uf'] == 'PE') ? 'selected': ''; ?>>PE</option>
-								<option <?php echo ($info['uf'] == 'PI') ? 'selected': ''; ?>>PI</option>
 								<option <?php echo ($info['uf'] == 'PR') ? 'selected': ''; ?>>PR</option>
-								<option<?php echo ($info['uf'] == 'RJ') ? 'selected': ''; ?>>RJ</option>
-								<option<?php echo ($info['uf'] == 'RN') ? 'selected': ''; ?>>RN</option>
-								<option<?php echo ($info['uf'] == 'RO') ? 'selected': ''; ?>>RO</option>
-								<option<?php echo ($info['uf'] == 'RR') ? 'selected': ''; ?>>RR</option>
-								<option<?php echo ($info['uf'] == 'RS') ? 'selected': ''; ?>>RS</option>
-								<option<?php echo ($info['uf'] == 'SC') ? 'selected': ''; ?>>SC</option>
-								<option<?php echo ($info['uf'] == 'SE') ? 'selected': ''; ?>>SE</option>
 								<option<?php echo ($info['uf'] == 'SP') ? 'selected': ''; ?>>SP</option>
-								<option<?php echo ($info['uf'] == 'TO') ? 'selected': ''; ?>>TO</option>			
+			
 							</select>
 						</div>
 					</div>
 
-					<div class="col">
+					<div class="col-5">
 						<div class="form-group">
 							<label>Cidade:</label>
 							<select id="pop" class="select form-control form-control-sm" type="text" name="cid">
@@ -133,8 +111,56 @@ if($id){
 				<div class="form-row">
 					<div class="col">
 						<div class="form-group">
+							<label>Endereço 1:</label>
+							<input class="form-control form-control-sm" type="text" name="endereco-p">
+						</div>
+					</div>
+
+					<div class="col-2">
+						<div class="form-group">
+							<label>Nº:</label>
+							<input class="form-control form-control-sm" type="text" name="num-p">
+						</div>
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div class="col-4">
+						<div class="form-group">
+							<label>Complemento:</label>
+							<input class="form-control form-control-sm" type="text" name="comple-p">
+						</div>
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div class="col">
+						<div class="form-group">
+							<label>Endereço 2:</label>
+							<input class="form-control form-control-sm" type="text" name="endereco-s">
+						</div>
+					</div>
+
+					<div class="col-2">
+						<div class="form-group">
+							<label>Nº:</label>
+							<input class="form-control form-control-sm" type="text" name="num-s">
+						</div>
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div class="col-4">
+						<div class="form-group">
+							<label>Complemento:</label>
+							<input class="form-control form-control-sm" type="text" name="comple-s">
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="form-group">
 							<label>Observação:</label>
-							<textarea class="form-control form-control-sm" name="obs" ><?= $info['observacao'] ?></textarea>
+							<textarea class="obs form-control form-control-sm" name="obs" ><?= $info['observacao'] ?></textarea>
 						</div>
 					</div>
 				</div>

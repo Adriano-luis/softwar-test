@@ -9,7 +9,9 @@ body{
 	margin-top: 30px;
 	background-image:url('../images/Fabrica-de-Softwar.jpg');
     background-size:cover;
-    background-repeat: no-repeat;
+}
+textarea{
+	max-height: 150px;
 }
 .fundo{
 	display:inline-block;
@@ -24,7 +26,7 @@ body{
 	width: 100%;
 	height: 100vh;
 	background-image:url('../images/vitrine-01.jpg');
-    background-size:cover;
+    background-size:auto 146vh;
     background-position:center;
 }
 
@@ -33,11 +35,10 @@ body{
 }
 
 .cad .formulario {
-	margin-top: 20px;
+	margin-top: 10px;
 	width: 100%;
 	max-width: 420px;
 	height: auto;
-	max-height: 100vh;
 	padding: 10px 20px;
 	background-color: #ef7e04;
 	border-radius: 30px;
@@ -59,8 +60,7 @@ body{
 	max-width: 100px;
 }
 .cad .obs{
-	height: 50px;
-	max-height: 40px;
+	height: 31px;
 }
 .cad .checkbox {
 	max-width: 15px;
@@ -94,7 +94,7 @@ body{
 }
 .formulario-log{
 	margin: auto;
-	margin-top: 30px;
+	margin-top: 20px;
 	width: 100%;
 	max-width: 510px;
 	height: auto;

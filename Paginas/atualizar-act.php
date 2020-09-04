@@ -20,22 +20,40 @@ if(empty($ativo)) {
 }
 
 //verificar se os principais campos foram preenchidos e não estão vazios, usar metodo de envio de dados para o DB mais seguro usando identificação por ID.
-if(isset($name,$email,$senha,$cidade) && !empty($name && $email && $senha && $cidade)){
-	$sql = $pdo->prepare("UPDATE usuario SET nome = :nome, email = :email, senha = :senha, data =:dataNascimento, cidade = :cidade, uf = :uf, observacao = :observacao, ativo = :ativo  WHERE id=:id");
-	$sql->bindParam(':id', $id);
-	$sql->bindParam(':nome', $name);
-	$sql->bindParam(':email', $email);
-	$sql->bindParam(':senha', $senha);
-	$sql->bindParam(':dataNascimento', $dataNascimento);
-	$sql->bindParam(':cidade', $cidade);
-	$sql->bindParam(':uf', $uF);
-	$sql->bindParam(':observacao', $observacao);
-	$sql->bindParam(':ativo', $ativo);
-	$sql->execute();
+if(isset($name,$email,$cidade) && !empty($name && $email && $cidade)){
+	if (empty($senha)) {
+		$sql = $pdo->prepare("UPDATE usuario SET nome = :nome, email = :email, data =:dataNascimento, cidade = :cidade, uf = :uf, observacao = :observacao, ativo = :ativo  WHERE id=:id");
+		$sql->bindParam(':id', $id);
+		$sql->bindParam(':nome', $name);
+		$sql->bindParam(':email', $email);
+		$sql->bindParam(':dataNascimento', $dataNascimento);
+		$sql->bindParam(':cidade', $cidade);
+		$sql->bindParam(':uf', $uF);
+		$sql->bindParam(':observacao', $observacao);
+		$sql->bindParam(':ativo', $ativo);
+		$sql->execute();
 
-	header("location: index.php");
-	exit;
-	
+		header("location: index.php");
+		exit;
+
+	} else{
+
+		$sql = $pdo->prepare("UPDATE usuario SET nome = :nome, email = :email, senha = :senha, data =:dataNascimento, cidade = :cidade, uf = :uf, observacao = :observacao, ativo = :ativo  WHERE id=:id");
+		$sql->bindParam(':id', $id);
+		$sql->bindParam(':nome', $name);
+		$sql->bindParam(':email', $email);
+		$sql->bindParam(':senha', $senha);
+		$sql->bindParam(':dataNascimento', $dataNascimento);
+		$sql->bindParam(':cidade', $cidade);
+		$sql->bindParam(':uf', $uF);
+		$sql->bindParam(':observacao', $observacao);
+		$sql->bindParam(':ativo', $ativo);
+		$sql->execute();
+
+		header("location: index.php");
+		exit;
+		}
+
  } else {
 	header("location: atualizar.php");
 	exit;

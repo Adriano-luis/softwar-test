@@ -7,4 +7,4 @@ BD
 acesso: root, " ".
 
 A fazer:
-finalizei a transição para bootstrap padrão, coloquei as datas apresentas para o formato br recebi o contrato da faculdade assinado, gostaria de amanhã ir imprimir assinar e enviar ao CIEE.
+Criar tabela no DB e relacionar os cadastros, aprensentar na página index.

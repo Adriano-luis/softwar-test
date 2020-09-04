@@ -18,103 +18,136 @@ session_start();
 			<?php if(isset($_SESSION['cadastro'])){ echo $_SESSION['cadastro'];} else {$_SESSION['cadastro'] = "";} ?>
 			<form class="mx-auto d-block" method="POST" action="cadastro.php">
 				<div class="form-row">
-					<div class="col-10">
+					<div class="col">
 						<div class="form-group">
 							<label>Nome:</label>
-							<input class="default form-control form-control-sm" type="text" name="nome">
+							<input class="form-control form-control-sm" type="text" name="nome">
 						</div>
 					</div>
 				</div>
 
 				<div class="form-row">
-					<div class="col-10">
+					<div class="col">
 						<div class="form-group">
 							<label>Email:</label>
-							<input class="default form-control form-control-sm" type="email" name="email">
+							<input class="form-control form-control-sm" type="email" name="email">
 						</div>
 					</div>
 				</div>
 
 				<div class="form-row">
-					<div class="col-10">
+					<div class="col">
 						<div class="form-group">
 							<label>Senha:</label>
-							<input class="default form-control form-control-sm" type="password" name="senha">
+							<input class="form-control form-control-sm" type="password" name="senha">
 						</div>
 					</div>
 				</div>
 
 				<div class="form-row">
-					<div class="col-10">
+					<div class="col-5">
 						<div class="form-group">
 							<label>Data de nascimento:</label>
-							<input class="default form-control form-control-sm" type="date" name="data">
+							<input class="form-control form-control-sm" type="date" name="data">
 						</div>
 					</div>
-				</div>
 
-				<div class="form-row">
-					<div class="col-3">
+					<div class="col">
 						<div class="form-group">
 							<label>UF:</label>
-							<select id="changeuf" class="default uf select form-control form-control-sm" name="uf">
+							<select id="changeuf" class="uf select form-control form-control-sm" name="uf">
 								<option>AC</option>
 								<option>AL</option>
 								<option>AM</option>
 								<option>AP</option>
-								<option>BA</option>
-								<option>CE</option>
-								<option>DF</option>
-								<option>ES</option>
-								<option>GO</option>
-								<option>MA</option>
-								<option>MG</option>
-								<option>MS</option>
-								<option>MT</option>
-								<option>PA</option>
-								<option>PB</option>
-								<option>PE</option>
-								<option>PI</option>
 								<option>PR</option>
-								<option>RJ</option>
-								<option>RN</option>
-								<option>RO</option>
-								<option>RR</option>
-								<option>RS</option>
-								<option>SC</option>
-								<option>SE</option>
 								<option>SP</option>
-								<option>TO</option>			
 							</select>
 						</div>
 					</div>
-					<div class="col-7">
+
+					<div class="col-5">
 						<div class="form-group">
 							<label>Cidade:</label>
-							<select id="pop" class="default form-control select form-control-sm" type="text" name="cid" placeholder="Selecione o Estado primeiro...">
+							<select id="pop" class="form-control select form-control-sm" type="text" name="cid" placeholder="Selecione o Estado primeiro...">
 							</select>
 						</div>
 					</div>
 				</div>
 
 				<div class="form-row">
-					<div class="col-10">
+
+				</div>
+
+				<div class="form-row">
+					<div class="col">
 						<div class="form-group">
-							<label>Observação:</label>
-							<textarea class="default2 obs form-control form-control-sm" name="obs"></textarea>
+							<label>Endereço 1:</label>
+							<input class="form-control form-control-sm" type="text" name="endereco-p">
+						</div>
+					</div>
+
+					<div class="col-2">
+						<div class="form-group">
+							<label>Nº:</label>
+							<input class="form-control form-control-sm" type="text" name="num-p">
 						</div>
 					</div>
 				</div>
 
 				<div class="form-row">
-					<div class="col-2">
+					<div class="col-4">
 						<div class="form-group">
-							<label>Ativo:</label>
-							<input class="default2 checkbox form-control" type="checkbox" name="ativo" value="sim">
+							<label>Complemento:</label>
+							<input class="form-control form-control-sm" type="text" name="comple-p">
 						</div>
 					</div>
+				</div>
+
+				<div class="form-row">
+					<div class="col">
+						<div class="form-group">
+							<label>Endereço 2:</label>
+							<input class="form-control form-control-sm" type="text" name="endereco-s">
+						</div>
+					</div>
+
+					<div class="col-2">
+						<div class="form-group">
+							<label>Nº:</label>
+							<input class="form-control form-control-sm" type="text" name="num-s">
+						</div>
+					</div>
+				</div>
+
+				<div class="form-row">
 					<div class="col-4">
-						<div class="sim form-group">Sim</div>
+						<div class="form-group">
+							<label>Complemento:</label>
+							<input class="form-control form-control-sm" type="text" name="comple-s">
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="form-group">
+							<label>Observação:</label>
+							<textarea class="obs form-control form-control-sm" name="obs"></textarea>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div class="col-1">
+						<div class="form-group">
+							<label>Ativo:</label>
+							<input class="checkbox form-control" type="checkbox" name="ativo" value="sim">
+						</div>
+					</div>
+					<div class="col-1">
+						<div class="form-group">
+							<label></label>
+							<div>Sim</div>
+						</div>
 					</div>
 				</div>
 

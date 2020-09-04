@@ -15,7 +15,7 @@ if (isset($_SESSION['id']) && !empty($_SESSION['id'])){ ?>
 </head>
 <body>
 	<div class="container">
-		<div class="fundo">
+		<div class="fundo mx-auto d-block">
 			<div  class="h1 text-center">Estágio na Softwar</div>
 			<?php
 			$lista = [];
@@ -39,7 +39,6 @@ if (isset($_SESSION['id']) && !empty($_SESSION['id'])){ ?>
 							<th>Id</th>
 							<th>Nome</th>
 							<th>Email</th>
-							<th>Senha</th>
 							<th>Data-nasci</th>
 							<th>Cidade</th>
 							<th>UF</th>
@@ -55,7 +54,6 @@ if (isset($_SESSION['id']) && !empty($_SESSION['id'])){ ?>
 							<td><?= $usuario['id']; ?></td>
 							<td><?= $usuario['nome']; ?></td>
 							<td><?= $usuario['email']; ?></td>
-							<td><?= $usuario['senha']; ?></td>
 							<td><?= date('d/m/Y', strtotime($usuario['data'])); ?></td>
 							<td><?= $usuario['cidade']; ?></td>
 							<td><?= $usuario['uf']; ?></td>
